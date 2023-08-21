@@ -1,0 +1,52 @@
+body {
+    background-image: url("background_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    margin: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 0 3rem;
+    overflow: visible;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.log {
+    width: 20%;
+}
+
+.category {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.loginButton {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginButton button {
+    padding: 10px 1.5rem;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color:black;
+    font-size: 1.5rem;
+}
+
+.loginButton button:hover {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid white;
+    transition: 1s;
+}
