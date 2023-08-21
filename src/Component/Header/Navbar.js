@@ -10,7 +10,7 @@ const Navbar = () => {
                 <NavbarCategory />
             </div>
             <div className={classes.loginButton}>
-                <button>Log In</button>
+                <button>Sign Up</button>
             </div>
         </div>
     )
