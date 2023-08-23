@@ -1,13 +1,18 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import './App.css';
 import Navbar from './Component/Header/Navbar';
 import LoginForm from './Component/LoginForm/LoginForm';
+import SignUpForm from './Component/SignUpForm/SignUpForm';
 
 function App() {
+  const [signUpForm, setSignUpForm] = useState(false);
+  const signUpHandler = () => {
+    setSignUpForm(true)
+  }
   return (
     <Fragment>
-      <Navbar />
-      <LoginForm />
+      <Navbar signUp={signUpHandler} />
+      {!signUpForm ? <LoginForm /> : <SignUpForm />}
     </Fragment>
   );
 }

@@ -1,6 +1,6 @@
 import classes from "./Navbar.module.css";
 import NavbarCategory from "./Navbar_Category";
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <div className={classes.header}>
             <div className={classes.Logo}>
@@ -10,7 +10,7 @@ const Navbar = () => {
                 <NavbarCategory />
             </div>
             <div className={classes.loginButton}>
-                <button>Sign Up</button>
+                <button onClick={props.signUp}>Sign Up</button>
             </div>
         </div>
     )
