@@ -1,3 +1,7 @@
+
+//   useState method for form validation 
+
+//    import all folder relative to SignUpForm //////////////
 import { useState } from "react";
 import classes from "./SignUpForm.module.css"
 import UserName from "./UserName";
@@ -5,6 +9,8 @@ import UserEmail from "./UserEmail";
 import UserPassword from "./UserPassword";
 import { UserReInterPassword } from "./UserPassword";
 const SignUpForm = () => {
+
+    //   use useState Hook for validation //////////////
     const [userName, setUserName] = useState("");
     const [userNameValid, setUserNameValid] = useState(true)
     const [userEmail, setUserEmail] = useState("");
@@ -13,8 +19,13 @@ const SignUpForm = () => {
     const [userPasswordValid, setUserPasswordValid] = useState(true);
     const [userReInterPassword, setUserReInterPassword] = useState("")
     const [userReInterPasswordValid, setUserReInterPasswordValid] = useState(true);
+
+    // form submit Handler /////////////
+
     const signUpHandler = (event) => {
         event.preventDefault();
+        // use Validation for all input ///////////////////////
+
         if (userName.trim() === "") {
             setUserNameValid(false)
         }
@@ -37,6 +48,7 @@ const SignUpForm = () => {
         setUserReInterPassword("")
         console.log(userName)
     }
+
     return (
 
         <form className={classes.form} onSubmit={signUpHandler}>
