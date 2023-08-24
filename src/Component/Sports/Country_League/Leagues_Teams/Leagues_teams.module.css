@@ -1,0 +1,45 @@
+body {
+    background-image: url("images\ \(1\).jpg");
+    background-size: cover;
+}
+
+.teamsName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.worldLeagues {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.leaguesData {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaguesData button {
+    padding: 10px 1.5rem;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.leaguesData button:hover {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid white;
+    transition: 1s;
+}
