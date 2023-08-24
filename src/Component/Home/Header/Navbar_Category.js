@@ -23,7 +23,7 @@ const navbarCategory = () => {
                 <summary>Media</summary>
                 <div className={classes.links}>
                     <a href=" ">National_Media</a>
-                    <a href=" ">InterNational <br/>Media</a>
+                    <a href=" ">InterNational <br />Media</a>
                 </div>
             </details>
             <details >
@@ -34,7 +34,7 @@ const navbarCategory = () => {
                     <a href=" ">Regular_Fitness</a>
                 </div>
             </details>
-            
+
 
         </div>
     )

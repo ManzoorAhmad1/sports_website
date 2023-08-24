@@ -1,0 +1,82 @@
+.cricketNavbar {
+    width: 100%;
+    height: 5rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
+.home {
+    background-color: aqua;
+}
+
+.cricketHome a {
+    text-decoration: none;
+}
+
+.cricketHome a:hover {
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+.cricketLinks a {
+    margin: 0 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+.cricketLinks a:hover {
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.button button {
+    padding: 1rem;
+    background-color: aqua;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.button button:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+.cricketNews {
+    width: 100%;
+    max-width: 80%;
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+    margin: 1rem 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cricketNewsImage {
+    margin-left: 10px;
+}
+
+.CricketNewData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
