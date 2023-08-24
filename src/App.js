@@ -1,8 +1,8 @@
 import { Fragment, useState } from 'react';
 import './App.css';
-import Navbar from './Component/Header/Navbar';
-import LoginForm from './Component/LoginForm/LoginForm';
-import SignUpForm from './Component/SignUpForm/SignUpForm';
+import Navbar from './Component/Home/Header/Navbar';
+import LoginForm from './Component/Home/LoginForm/LoginForm';
+import SignUpForm from './Component/Home/SignUpForm/SignUpForm';
 
 function App() {
   const [signUpForm, setSignUpForm] = useState(false);
