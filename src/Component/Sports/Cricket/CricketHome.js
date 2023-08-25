@@ -1,6 +1,7 @@
 import Cricket from "../../../Backened_Folder/Sports/Cricket";
 import classes from "./Cricket.module.css"
 import Card from "../../UI/Card";
+import CricketNavbar from "./CricketNavbar";
 const CricketHome = (props) => {
     const cricket = Cricket.map((item) => {
         return (
@@ -20,6 +21,7 @@ const CricketHome = (props) => {
     })
     return (
         <main >
+            <CricketNavbar />
             {cricket}
         </main>
     )
