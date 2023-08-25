@@ -1,12 +1,10 @@
-import CricketHome from "./CricketHome";
 import CricketNavbar from "./CricketNavbar";
-import CricketNews from "./CricketNews";
+import HomeText from "./Home_Text";
 const Cricket = (props) => {
     return (
         <div>
             <CricketNavbar />
-            <CricketHome />
-            <CricketNews />
+            <HomeText />
         </div>
     )
 }
