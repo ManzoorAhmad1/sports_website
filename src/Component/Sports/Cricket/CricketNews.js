@@ -1,5 +1,6 @@
 import CricketNew from "../../../Backened_Folder/Sports/CricketNews"
 import classes from "./Cricket.module.css"
+import CricketNavbar from "./CricketNavbar"
 const CricketNews = (props) => {
     let cricketNews = CricketNew.map((data) => {
         return (
@@ -19,6 +20,7 @@ const CricketNews = (props) => {
     })
     return (
         <div>
+            <CricketNavbar />
             {cricketNews}
         </div>
     )
