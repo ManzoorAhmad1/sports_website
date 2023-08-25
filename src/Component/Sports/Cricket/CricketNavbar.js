@@ -1,14 +1,20 @@
 import classes from "./Cricket.module.css"
-
+import { Link, useNavigate } from "react-router-dom";
 const CricketNavbar = (props) => {
+    const navigate = useNavigate();
+    const loginHandler = () => {
+        navigate("/")
+    }
     return (
         <div className={classes.cricketNavbar}>
             <div className={classes.cricketHome}>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
             </div>
             <div className={classes.cricketLinks}>
-                <a href="/Sporsts">Cricket_Sports</a>
-                <a href="/News">Cricket_News</a>
+                <Link to="/Sports">world_Teams</Link>
+                <Link to="/News">Teams_News</Link>
+                <Link to="/Leagues_HomePage">Cricket_leagues</Link>
+                <button onClick={loginHandler}>Login</button>
             </div>
         </div>
     )
