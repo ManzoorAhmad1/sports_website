@@ -1,5 +1,6 @@
 
 import WorldLeagues from "../../../../Backened_Folder/World_Leagues/World_Leagues"
+import LeaguesNavbar from "../Counter_League_homePage/Leagues_Navbar"
 import classes from "./Leagues_teams.module.css"
 const LeaguesTeams = (props) => {
     const worldLeagues = WorldLeagues.map((teams) => {
@@ -17,9 +18,13 @@ const LeaguesTeams = (props) => {
         )
     })
     return (
-        <div className={classes.worldLeagues}>
-            {worldLeagues}
+        <div>
+            <LeaguesNavbar />
+            <div className={classes.worldLeagues}>
+                {worldLeagues}
+            </div>
         </div>
+
     )
 }
 export default LeaguesTeams;
